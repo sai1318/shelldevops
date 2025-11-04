@@ -1,5 +1,6 @@
 #!/bin/bash
-
+USERNAME=sai
+PASSWORD=dhoni
 
 echo "please enter your username="
 read USERNAME
@@ -12,7 +13,7 @@ echo "password entered=$PASSWORD"
 echo
 
 # Validation logic
-if [[ "$USERNAME" == "$CORRECT_USERNAME" && "$PASSWORD" == "$CORRECT_PASSWORD" ]]; then
+if [[ "$USERNAME" == "$USERNAME" && "$PASSWORD" == "$PASSWORD" ]]; then
     echo "✅ Login successful! Welcome $USERNAME."
 else
     echo "❌ Invalid username or password. Access denied."
