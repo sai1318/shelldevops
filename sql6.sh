@@ -10,9 +10,9 @@ else
   echo "Proceeding further..."
 fi
 
-apt update -y
 
-# Install MySQL
+
+
 apt install mysql-server -y
 if [ $? -ne 0 ]
 then 
@@ -22,7 +22,7 @@ else
   echo "Installing MySQL... success"
 fi
 
-# Install NGINX
+
 apt install nginx -y
 if [ $? -ne 0 ]
 then 

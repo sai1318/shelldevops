@@ -9,9 +9,11 @@ then
 else 
  echo "proceed further"
  fi
+
 apt update -y
 
 apt install mysql server -y
+
 if [ $? -ne 0 ]
 then 
 echo "installing mysql ... failure"
