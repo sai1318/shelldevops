@@ -24,6 +24,7 @@ echo "Installing MySQL Server..."
 apt install mysql-server -y
 VALIDATE $? "Installing MySQL Server"
 
+
 echo "Installing NGINX..."
 apt install nginx -y
 VALIDATE $? "Installing NGINX"
